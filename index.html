@@ -6,14 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Parallax page</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
+
 <body>
 
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+<script> $(document).ready(function(){
+  // init-sidenav
+  $('.button-collapse').sideNav();
+});
+</script>
+
+
+
   <div class="pimg1">
+    <div class="nav-pos">
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <a href="#"><i class="medium material-icons">contact_mail</i> Contact</a>
+        </li>
+        <li>
+          <a href="#" class="subheader"> <h4>testy-test</h4></a>
+        </li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="large material-icons">menu</i></a>
+    </div>
     <div class="ptext">
       <span class="border">
-        Parallax Website
+        Rowan Turnbull
       </span>
     </div>
   </div>

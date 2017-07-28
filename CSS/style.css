@@ -12,7 +12,7 @@ body, html{
   position:relative;
   opacity:0.70;
   background-position:center;
-  background-siz:cover;
+  background-size:cover;
   background-repeat: no-repeat;
 /*
 change background-attachment from:
@@ -26,16 +26,20 @@ scroll = normal scrolling
 .pimg1{
   background-image:url('../img/image1.jpeg');
   min-height:100%;
+  z-index: 9;
+
 }
 
 .pimg2{
   background-image:url('../img/image2.jpeg');
   min-height:400px;
+  z-index: 8;
 }
 
 .pimg3{
   background-image:url('../img/image3.jpeg');
   min-height:400px;
+  z-index: 7;
 }
 
 .section{
@@ -72,6 +76,19 @@ scroll = normal scrolling
 
 .ptext .border .trans{
   background-color:transparent;
+
+}
+
+.nav-pos{
+  padding-left: 20px;
+  padding-top: 10px;
+  position:fixed;
+  z-index: 10;
+}
+
+li{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 @media(max-width:568px){
